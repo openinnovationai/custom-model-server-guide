@@ -1,6 +1,6 @@
 ---
 name: building-custom-model-servers
-description: Use when packaging a Hugging Face or custom ML model as an OICM-compatible custom model server Docker image — especially non-generative models that vLLM/SGLang cannot serve (embeddings, classifiers, decision models, anything with a plain Python inference API), when creating startup.sh / CUDA / multi-arch CPU Dockerfiles against the OICM contract, or when validating an OICM server for port 8080, UID 10000, $PVC_PATH, MODEL_ID, or /health problems. Triggers: container exits before binding, health probe kills pod during slow model load, unbound variable in startup.sh, FastAPI param treated as query arg, torch wheel missing for cu130 or aarch64.
+description: "Use when packaging a Hugging Face or custom ML model as an OICM-compatible custom model server Docker image — especially non-generative models that vLLM/SGLang cannot serve (embeddings, classifiers, decision models, anything with a plain Python inference API), when creating startup.sh / CUDA / multi-arch CPU Dockerfiles against the OICM contract, or when validating an OICM server for port 8080, UID 10000, $PVC_PATH, MODEL_ID, or /health problems. Triggers: container exits before binding, health probe kills pod during slow model load, unbound variable in startup.sh, FastAPI param treated as query arg, torch wheel missing for cu130 or aarch64."
 ---
 
 # Building Custom Model Servers (OICM)
